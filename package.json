@@ -49,5 +49,13 @@
   },
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "reactresize",
+    "react window",
+    "resize tracker",
+    "detector",
+    "resize detector",
+    "resize hook"
   ]
 }
