@@ -13,8 +13,6 @@ npm install --save react-resize-tracker
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
-
 import React, { useWindowResizeTracker } from 'react-resize-tracker'
 
 const Example = (_) => {
@@ -26,7 +24,7 @@ const Example = (_) => {
 
   return (
     <React.Fragment>
-      // conditional rendering base on current window width
+      {/* Conditional rendering base on current window width */}
       {currentWidth < 500 ? (
         <h1> My current window width is less than 500px</h1>
       ) : (
