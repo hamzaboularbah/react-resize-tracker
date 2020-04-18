@@ -1,6 +1,6 @@
 {
   "name": "react-resize-tracker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A react hook that tracks the window resize event and returns the current width and height",
   "author": "hamzaboularbah",
   "license": "MIT",
@@ -51,11 +51,17 @@
     "dist"
   ],
   "keywords": [
-    "reactresize",
-    "react window",
+    "react resize",
+    "react window resize",
+    "window resize tracker",
     "resize tracker",
     "detector",
     "resize detector",
-    "resize hook"
+    "resize hook",
+    "hooks",
+    "listener",
+    "reactjs",
+    "tracker",
+    "resize event"
   ]
 }
