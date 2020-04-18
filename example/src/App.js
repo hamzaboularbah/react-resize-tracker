@@ -1,10 +1,9 @@
 import React from 'react'
-
-import { ExampleComponent } from 'react-resize-tracker'
-import 'react-resize-tracker/dist/index.css'
+import { useWindowResizeTracker } from 'react-resize-tracker'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  const [width, height] = useWindowResizeTracker()
+  return <h1>current window size : {`${width}px x ${height}px`} </h1>
 }
 
 export default App
