@@ -1,6 +1,6 @@
 import { useLayoutEffect, useState } from 'react'
 
-export const useWindowResizeTracker = (_) => {
+export const useWindowResize = (_) => {
   const [size, setSize] = useState([0, 0])
   useLayoutEffect((_) => {
     const updateSize = (_) => {

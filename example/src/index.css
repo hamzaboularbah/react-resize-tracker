@@ -8,7 +8,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body h1 {
+body h1,
+p {
   text-align: center;
 }
 code {
