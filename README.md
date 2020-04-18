@@ -15,13 +15,25 @@ npm install --save react-resize-tracker
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-resize-tracker'
-import 'react-resize-tracker/dist/index.css'
+import React, { useWindowResizeTracker } from 'react-resize-tracker'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const Example = (_) => {
+  const [currentWidth, currentHeight] = useWindowResizeTracker()
+  // now you have access to the current window width and height
+
+  console.log(currentWidth) // Expect the current window width
+  console.log(currentHeight) // Expect the current window height
+
+  return (
+    <React.Fragment>
+      // conditional rendering base on current window width
+      {currentWidth < 500 ? (
+        <h1> My current window width is less than 500px</h1>
+      ) : (
+        <h1> My current window width is more than 500px</h1>
+      )}
+    </React.Fragment>
+  )
 }
 ```
 
