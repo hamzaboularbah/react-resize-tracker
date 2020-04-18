@@ -1,8 +1,8 @@
 import React from 'react'
-import { useWindowResizeTracker } from 'react-resize-tracker'
+import { useWindowResize } from 'react-resize-tracker'
 
 const App = () => {
-  const [width, height] = useWindowResizeTracker()
+  const [width, height] = useWindowResize()
   return (
     <React.Fragment>
       <h1>Current window size : {`${width}px x ${height}px`} </h1>
