@@ -20,7 +20,7 @@ npm install --save react-resize-tracker
 import React from 'react'
 import { useWindowResize } from 'react-resize-tracker'
 
-const Example = (_) => {
+const Example = () => {
   const [currentWidth, currentHeight] = useWindowResize()
   // now you have access to the current window width and height
 
